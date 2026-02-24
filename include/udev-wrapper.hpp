@@ -43,8 +43,12 @@ class uDevice {
   const char* get_devpath() const;
   const char* get_subsystem() const;
   const char* get_devtype() const;
-  const char* get_action() const;
+  const char* get_syspath() const;
+  const char* get_sysname() const;
+  const char* get_sysnum() const;
   const char* get_devnode() const;
+  int is_initialized();
+  const char* get_action() const;
   udev_device* get_parrent() const;
   const char* get_property();
   const char* get_get_sysattr(const char* attr);
